@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Dribbbo</string>
+    <string name="app_name">Dreamble</string>
 
-    <string name="title_home">Dribbbo</string>
+    <string name="title_home">Dreamble</string>
     <string name="title_likes">Likes</string>
     <string name="title_buckets">Buckets</string>
 
@@ -30,6 +30,11 @@
     <string name="shot_count">{0,choice,0#0 shot|1#1 shot|1&lt;{0} shots}</string>
     <string name="auth_activity_title">Log into Dribbble</string>
 
-    <string name="activity_login_btn_text">Log into Dribbble</string>
-    <string name="activity_login_icon">Dribbble icon</string>
+    <string name="activity_login_btn_text">Log into Dreamble</string>
+    <string name="activity_login_icon">Dreamble icon</string>
+    <string name="new_bucket_description">Bucket description</string>
+    <string name="choose_bucket">choose bucket</string>
+    <string name="share_shot">share shot</string>
+    <string name="shot_count_single">count</string>
+    <string name="shot_count_plural">count plural</string>
 </resources>
