@@ -1,6 +1,7 @@
 package edu.neu.ranchen.dreamble.view;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -22,12 +23,18 @@ import edu.neu.ranchen.dreamble.R;
 public class LoginActivity extends AppCompatActivity {
 
     @BindView(R.id.activity_login_btn) TextView loginBtn;
+    Typeface custom_font;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
+
+        custom_font = Typeface.createFromAsset(getAssets(), "fonts/mario_fonts.ttf");
+        loginBtn.setTypeface(custom_font);
+
 
         // load access token from shared preference
         Dribbble.init(this);
